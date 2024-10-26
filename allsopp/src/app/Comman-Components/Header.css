@@ -1,0 +1,18 @@
+.HeadInner{
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    
+}
+.header-top{
+    background-color: #002E53;
+}
+.HeadInner a{
+    font-weight: bold;
+}
+.header-bottom{
+    background-color: #B8D9DE;
+}
