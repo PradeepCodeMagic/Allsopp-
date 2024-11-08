@@ -1,36 +1,79 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<header>
+        <Container fluid className="header_container">
+          <Container className="d-flex justify-content-between align-items-center py-3">
+            <div >
+              {/* Logo */}
+              <Navbar.Brand href="https://www.allsoppandallsopp.com/" className="logo">
+                <Image src={logo} alt="Allsopp & Allsopp Logo" />
+              </Navbar.Brand>
+            </div>
 
-## Getting Started
+            <div className=''>
+              
+              <Nav className="d-none d-md-flex align-items-center  ">
+                <Nav.Link href="/dubai/properties/residential/sales">Buy</Nav.Link>
+                <Nav.Link href="/dubai/properties/residential/lettings">Rent</Nav.Link>
+                <Nav.Link href="/private-office">Private Office</Nav.Link>
+                <Nav.Link href="/dubai/properties/mortgages">Mortgages</Nav.Link>
+                <Nav.Link href="/dubai/about-us/careers-at-allsopp-and-allsopp">Careers</Nav.Link>
+                <div className="vertical-line mx-3" />
+                <Nav.Link className="bold-text" href="/dubai/book-valuation">List your property</Nav.Link>
+              </Nav>
 
-First, run the development server:
+              
+              <div className="header-icons d-flex align-items-center">
+                <Nav.Link href="/dubai/properties/residential/sales" aria-label="Search Icon">
+                  <TfiSearch />
+                </Nav.Link>
+                <Nav.Link role="button" aria-label="User Login">
+                  <BiUser />
+                </Nav.Link>
+                <Button variant="link" onClick={handleShow} aria-label="Burger menu Icon">
+                  <HiOutlineBars3 />
+                </Button>
+              </div>
+            </div>
+          </Container>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+         
+          {/* <Offcanvas show={show} onHide={handleClose} placement="end">
+            <Offcanvas.Header closeButton>
+              <Offcanvas.Title>Menu</Offcanvas.Title>
+            </Offcanvas.Header>
+            <Offcanvas.Body>
+              <Accordion defaultActiveKey="0">
+                <Accordion.Item eventKey="1">
+                  <Accordion.Header>Buy</Accordion.Header>
+                  <Accordion.Body>
+                    <Nav.Link href="/dubai/properties/residential/sales">Properties for Sale</Nav.Link>
+                  </Accordion.Body>
+                </Accordion.Item>
+                <Accordion.Item eventKey="2">
+                  <Accordion.Header>Rent</Accordion.Header>
+                  <Accordion.Body>
+                    <Nav.Link href="/dubai/properties/residential/lettings">Properties for Rent</Nav.Link>
+                  </Accordion.Body>
+                </Accordion.Item>
+                <Accordion.Item eventKey="3">
+                  <Accordion.Header>Private Office</Accordion.Header>
+                  <Accordion.Body>
+                    <Nav.Link href="/private-office">Private Office</Nav.Link>
+                  </Accordion.Body>
+                </Accordion.Item>
+                <Accordion.Item eventKey="4">
+                  <Accordion.Header>Mortgages</Accordion.Header>
+                  <Accordion.Body>
+                    <Nav.Link href="/dubai/properties/mortgages">Mortgage Calculator</Nav.Link>
+                  </Accordion.Body>
+                </Accordion.Item>
+                <Accordion.Item eventKey="5">
+                  <Accordion.Header>Careers</Accordion.Header>
+                  <Accordion.Body>
+                    <Nav.Link href="/dubai/about-us/careers-at-allsopp-and-allsopp">Join Our Team</Nav.Link>
+                  </Accordion.Body>
+                </Accordion.Item>
+              </Accordion>
+            </Offcanvas.Body>
+          </Offcanvas> */}
+        </Container>
+      </header>

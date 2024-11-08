@@ -1,0 +1,165 @@
+
+
+#FindPlace{
+    background-image: url('https://www.allsoppandallsopp.com/images/banners/home_banner.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    height: 660px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    margin-top: -1px;
+    
+}
+#FindPlace .left .leftInnDiv{
+    width: 500px;
+    /* border: 1px solid; */
+    color: #002E53;
+   
+    
+
+}
+.tabs{
+   
+
+   position: relative;
+   
+ 
+}
+.allNBtn{
+    width: 100%;
+    
+    display: flex;
+}
+.tabs button{
+    border: none;
+    outline: none;
+    padding: 10px 18px;
+    margin-right: 8px;
+    border-radius: 5px 5px 0px 0px;
+    background-color: #e7f4f6;
+    
+}
+
+.btnActive{
+   
+    background-color: white !important;
+}
+.spanActive{
+    border-bottom: 2px solid;
+    color: #002E53;
+    padding: 10px 0px;
+    font-weight: bold;
+    
+}
+.tabDown{
+    width: 120%;
+    padding: 10px;
+    background-color: white;
+    
+    display: flex;
+    align-items: center;
+    border-radius: 0px 5px 5px 5px;
+}
+    .tabDown form{
+        width: 70%;
+        padding: 14px 10px;
+        border: 1px solid #ccc;
+        margin-right: 10px;
+        border-radius: 5px !important;
+       
+    }
+    .tabDown form input{
+        outline: none;
+        margin-left: 5px;
+        
+       
+    }
+    .tabDown form input::placeholder{
+        color: black;
+    }
+
+    .Filters{
+        width: 18%;
+        padding: 14px 0px !important;
+        border: 1px solid #ccc !important;
+        border-radius: 5px !important;
+        background-color: white !important;
+    }
+    .CiSearch{
+        width: 50px;
+        height: 50px;
+        background-color: #002E53 !important;
+        color: white;
+        border-radius: 50% !important;
+        margin-left: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .CiSearch .iCon{
+        font-size: 25px !important;
+    }
+    .filterHoverDiv{
+        width: 115%;
+       background-color: white;
+        position: absolute;
+        top: 110%;
+        left: 0%;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    .filterHoverDivBox{
+        /* border: 1px solid red; */
+        text-align: left;
+    }
+    .filterHoverDivBox label{
+        color: #002E53;
+        font-weight: bold;
+    }
+    .filterHoverDivBox select{
+        padding: 10px;
+        outline: none;
+        width: 100%;
+        margin: 5px 0px;
+    }
+    .filterHoverDiv button{
+        border-radius: 30px;
+        background-color: #002E53;
+        color: white;
+    }
+
+    /* /////////////////////////////////////////////////// threbox */
+
+    #ThreeBox .top{
+        color: #002E53;
+    }
+   
+
+
+
+
+
+
+
+
+#FindPlace .right img{
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -99;
+}
+
+
+/*  */
+#ThreeBox .img img{
+    width: 100%;
+    height: 100%;
+}

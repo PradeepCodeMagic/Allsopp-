@@ -1,0 +1,16 @@
+@media only screen and (max-width: 576px) {
+    .tabDown{
+        width: 100% !important;
+    }
+    
+  }
+
+  @media only screen and (max-width: 768px) {
+   
+    /* three */
+    #ThreeBox .img{
+        width: 40% !important;
+        height: 80px;
+        margin-right: 20px;
+    }
+  }

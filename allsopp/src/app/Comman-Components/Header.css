@@ -15,4 +15,23 @@
 }
 .header-bottom{
     background-color: #B8D9DE;
+   
+}
+.navLi{
+    color: #002E53;
+}
+.HeadfontIcon{
+    
+    font-weight: 400;
+    padding: 0px 10px;
+}
+
+.offcanvas-backdrop {
+    position: fixed;
+    top: 2px;
+    left: 0;
+    z-index: 1040;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
 }
