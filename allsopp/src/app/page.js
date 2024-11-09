@@ -6,6 +6,13 @@ import FindPlace from "./Home-Components/FindPlace";
 import './Home-Components/home.css'
 import './Home-Components/homeResponsive.css'
 import ThreeBox from "./Home-Components/ThreeBox";
+import Private from "./Home-Components/Private";
+import Sliders from "./Home-Components/Sliders";
+import Discover from "./Home-Components/Discover";
+import Exceptional from "./Home-Components/Exceptional";
+import Gifs from "./Home-Components/Gifs";
+import DownTreeBox from "./Home-Components/DownTreeBox";
+import Footer from "./Comman-Components/Footer";
 
 export default function Home() {
   return (
@@ -13,6 +20,13 @@ export default function Home() {
     <Header/>
     <FindPlace/>
     <ThreeBox/>
-    </>
+    <Private/>
+    <Sliders/>
+    <Discover/>
+    <Exceptional/>
+    <Gifs/>
+    <DownTreeBox/>
+    <Footer/>
+      </>
   );
 }

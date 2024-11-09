@@ -1,13 +1,8 @@
 import React from 'react'
-import { Col, Container, Image, Row } from 'react-bootstrap'
-import { RxArrowTopRight } from "react-icons/rx";
 
-export default function ThreeBox() {
+export default function DownTreeBox() {
   return (
-    <>
-
-
-      <section className="project-slider-wrapper section-p py-5">
+    <section className="project-slider-wrapper section-p py-5">
         <div className="container">
           <div className="project-parent">
             <div className="project-card">
@@ -33,7 +28,7 @@ export default function ThreeBox() {
                     loading="lazy"
                     decoding="async"
                     className="img-fluid"
-                    src="https://strapiallsopp.s3.eu-west-1.amazonaws.com/lifestyle_image_1_82a52d969e.jpg"
+                    src="https://www.allsoppandallsopp.com/_next/image?url=https%3A%2F%2Fstrapiallsopp.s3.eu-west-1.amazonaws.com%2FLifestyle_content_1cc78ec547.jpg&w=1920&q=75"
                   />
                 </a>
               </div>
@@ -61,7 +56,7 @@ export default function ThreeBox() {
                     loading="lazy"
                     decoding="async"
                     className="img-fluid"
-                    src="https://strapiallsopp.s3.eu-west-1.amazonaws.com/card2_874e0a94d1.png"
+                    src="https://www.allsoppandallsopp.com/_next/image?url=https%3A%2F%2Fstrapiallsopp.s3.eu-west-1.amazonaws.com%2FLifestyle_content_4_b99e470379.jpg&w=1920&q=75"
                   />
                 </a>
               </div>
@@ -79,7 +74,7 @@ export default function ThreeBox() {
                   The latest news and highlights from Dubai's real estate market.
                 </p>
               </div>
-              <div className="tile-img img-hover scalImg">
+              <div className="tile-img img-hover scalImg ">
                 <a
                   aria-label="Latest News - Image"
                   href="/dubai/about-us/news-videos"
@@ -88,8 +83,8 @@ export default function ThreeBox() {
                     alt="Latest News"
                     loading="lazy"
                     decoding="async"
-                    className="img-fluid"
-                    src="https://strapiallsopp.s3.eu-west-1.amazonaws.com/news_tile_7ea0d099f2.png"
+                    className="img-fluid scalImg "
+                    src="https://www.allsoppandallsopp.com/_next/image?url=https%3A%2F%2Fstrapiallsopp.s3.eu-west-1.amazonaws.com%2FLifestyle_content_6_d666ec7603.jpg&w=1920&q=75"
                   />
                 </a>
               </div>
@@ -97,45 +92,5 @@ export default function ThreeBox() {
           </div>
         </div>
       </section>
-
-      <section className="py-5 image-content-wrapper section-p b_top">
-        <Container className='' >
-          <Row className="align-items-center">
-            <Col xl={5} className="order-xl-1 order-2 content-wrapper">
-              <div className="small_heading">Find your perfect mortgage</div>
-              <div className="content">
-                <h2>Your home-buying journey should be smooth and stress-free</h2>
-                <p>Speak to our in-house mortgage team today and get access to the best rates in the UAE.</p>
-              </div>
-              <div className="cta_section row row-cols-1 row-cols-md-2  pt-3  text-center ">
-                <div className=''>
-                  <button className="btn-1  rounded-pill">
-                    Mortgage Calculator
-                  </button>
-                </div>
-                <div className=''>
-                  <button className=" btn-2   rounded-pill ">
-                    Speak to the team
-                  </button>
-                </div>
-              </div>
-            </Col>
-
-            <Col xl={1} className="order-xl-2 order-1"></Col>
-
-            <Col xl={6} className="order-xl-2 order-1 image-col">
-              <div className="image-content-img-wrapper">
-                <img
-                  src="https://strapiallsopp.s3.eu-west-1.amazonaws.com/Mortgage_Dept_focus_22c4868702.jpg"
-                  className="img-fluid"
-                  alt="Mortgage"
-                />
-              </div>
-            </Col>
-          </Row>
-        </Container>
-      </section>
-    </>
-
   )
 }

@@ -2,15 +2,78 @@
     .tabDown{
         width: 100% !important;
     }
+    .slick-next, .slick-prev{
+      display: none !important;
+    }
+    
     
   }
 
   @media only screen and (max-width: 768px) {
    
-    /* three */
-    #ThreeBox .img{
-        width: 40% !important;
-        height: 80px;
-        margin-right: 20px;
-    }
+    .btn-1{
+        width: 100%;
+        font-size: 16px;
+      }
+     
+  
+      .btn-2{
+        width: 100%;
+        margin-top: 20px;
+      }
+      #Private .left{
+        margin-top: 210px;
+        padding-left: 30px;
+      }
+      #Private .left button{
+        width: 100%;
+      }
+
+      #Private .right{
+        
+        border: 2px solid rgb(30, 255, 0);
+        
+      
+      }
+      #Private .right img{
+        width: 100%;
+        height: 240px;
+      }
+
+      .slick-next, .slick-prev{
+        display: none !important;
+      }
+      #Discover .left{
+        width: 100%;
+      }
+      #Discover .right{
+        width: 100%;
+        padding: 20px;
+      }
+      #Discover .right button{
+        width: 90%;
+      }
+      
+      
+      .btn-2{
+        margin: 10px 0px;
+      }
+      #Discover .right{
+        margin: 0px !important;
+      }
+      #Discover .left img{
+  
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        
+        object-position: center;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 99;
+      }
+      
   }
+
+  

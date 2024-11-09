@@ -1,0 +1,274 @@
+footer ul{
+    list-style: none !important;
+}
+footer {
+    background-color: black;
+    padding: 96px 0 92px;
+    
+}
+
+@media (max-width:1199.98px) {
+    footer {
+        padding: 56px 0
+    }
+}
+
+@media (max-width:767.98px) {
+    footer {
+        padding: 40px 0
+    }
+}
+
+@media (max-width:1199.98px) {
+    footer.with_cta {
+        padding-bottom: 120px
+    }
+}
+
+@media (max-width:767.98px) {
+    footer.with_cta {
+        padding-bottom: 85px
+    }
+}
+
+footer .footer-links .item .title,
+footer .title {
+    color: white;
+    font-size: 1.125rem;
+    padding-bottom: 16px
+}
+
+.top-header footer .footer-bottom-wrapper .footer-copyright ,
+footer .footer-bottom-wrapper .footer-copyright .links ,
+footer .footer-bottom-wrapper .footer-copyright .top-header ,
+footer .footer-bottom-wrapper .footer-copyright p,
+footer .footer-links .item ul li ,
+footer .footer-menu-accordion.accordion .accordion-item .accordion-body .link-wrap ,
+footer .text {
+    font-size: 1rem;
+    color: white;
+    line-height: var(--line-height120)
+}
+
+@media (max-width:767.98px) {
+
+    .top-header footer .footer-bottom-wrapper .footer-copyright a,
+    footer .footer-bottom-wrapper .footer-copyright .links a,
+    footer .footer-bottom-wrapper .footer-copyright .top-header a,
+    footer .footer-bottom-wrapper .footer-copyright p,
+    footer .footer-links .item ul li a,
+    footer .footer-menu-accordion.accordion .accordion-item .accordion-body .link-wrap a,
+    footer .text {
+        font-size: .875rem
+    }
+}
+
+footer .errfield {
+    color: #fff;
+    margin-top: 16px
+}
+
+footer .errfield {
+    color: #fff;
+    font-size: 16px;
+    transition: all .3s ease;
+    border-bottom: 1px solid transparent
+}
+
+footer .errfield:hover {
+    border-bottom: 1px solid
+}
+
+@media (max-width:767.98px) {
+    footer .errfield {
+        font-size: 14px
+    }
+}
+
+footer .form-wrapper {
+    padding-top: 24px
+}
+
+@media (max-width:1199.98px) {
+    footer .form-wrapper {
+        width: 50%
+    }
+}
+
+@media (max-width:767.98px) {
+    footer .form-wrapper {
+        width: 100%
+    }
+}
+
+footer .form-wrapper .icon {
+    border-radius: 40px;
+    border: 1px solid white;
+    background-size: 25px;
+    padding: 22px;
+    margin-left: 12px
+}
+
+footer .footer-links {
+    display: flex;
+    justify-content: space-between
+}
+
+@media (max-width:1199.98px) {
+    footer .footer-links {
+        padding-bottom: 40px
+    }
+}
+
+footer .footer-links>*+* {
+    margin-left: 24px
+}
+
+footer .footer-links .item ul>*+* {
+    margin-top: 8px
+}
+
+footer .footer-links .item ul li {
+    transition: all .3s ease;
+    border-bottom: 1px solid transparent
+}
+
+footer .footer-links .item ul li :hover {
+    border-bottom: 1px solid
+}
+
+footer .footer-menu-accordion {
+    margin-top: 40px
+}
+
+@media (max-width:767.98px) {
+    footer .footer-menu-accordion {
+        margin-top: 0;
+        margin-bottom: 40px
+    }
+}
+
+footer .footer-menu-accordion.accordion .accordion-item {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid var(--color-grey);
+    border-radius: 0;
+    border-top: 1px solid var(--color-grey);
+    padding: 8px 0
+}
+
+footer .footer-menu-accordion.accordion .accordion-item:first-child {
+    padding-top: 0
+}
+
+footer .footer-menu-accordion.accordion .accordion-item:last-child {
+    padding-bottom: 0
+}
+footer input{
+    outline: none !important;
+}
+
+footer .footer-menu-accordion.accordion .accordion-item .accordion-header .accordion-button {
+    background-color: transparent;
+    border-color: transparent;
+    border-radius: 0;
+    box-shadow: none;
+    color: var(--color-white);
+    font-size: 1rem;
+    line-height: var(--line-height136);
+    font-family: var(--font-base);
+    padding: 0
+}
+
+footer .footer-menu-accordion.accordion .accordion-item .accordion-header .accordion-button.collapsed:after,
+footer .footer-menu-accordion.accordion .accordion-item .accordion-header .accordion-button:after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='21' viewBox='0 0 20 21' fill='none'%3E%3Cpath d='M10 4.40149V16.0682M4.16667 10.2348H15.8333' stroke='white' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") !important;
+    width: 20px;
+    height: 21px;
+    
+}
+
+footer .footer-menu-accordion.accordion .accordion-item .accordion-body>*+* {
+    margin-top: 8px
+}
+
+footer .footer-bottom-wrapper {
+    padding-top: 80px
+}
+
+@media (max-width:1399.98px) {
+    footer .footer-bottom-wrapper {
+        padding-top: 56px
+    }
+}
+
+@media (max-width:1199.98px) {
+    footer .footer-bottom-wrapper {
+        padding-top: 40px
+    }
+}
+
+@media (max-width:767.98px) {
+    footer .footer-bottom-wrapper .footer-bottom-top {
+        flex-direction: column-reverse;
+        justify-content: flex-start !important;
+        align-items: flex-start !important
+    }
+
+    footer .footer-bottom-wrapper .footer-bottom-top .logo {
+        padding-top: 24px
+    }
+
+    footer .footer-bottom-wrapper .footer-bottom-top .logo img {
+        width: 179px;
+        height: 28px
+    }
+}
+
+footer .footer-bottom-wrapper .footer-bottom-top .social-icons>*+* {
+    margin-left: 20px
+}
+
+footer .footer-bottom-wrapper .footer-bottom-top .social-icons .icon {
+    transition: all .4s ease
+}
+
+footer .footer-bottom-wrapper .footer-bottom-top .social-icons .icon:hover {
+    transform: translateY(-5px)
+}
+
+footer .footer-bottom-wrapper .footer-copyright {
+    padding-top: 24px
+}
+
+footer .footer-bottom-wrapper .footer-copyright .links {
+    padding-bottom: 4px;
+    color: var(--color-white)
+}
+
+footer .footer-bottom-wrapper .footer-copyright .links{
+    transition: all .3s ease;
+    border-bottom: 1px solid transparent
+}
+
+footer .footer-bottom-wrapper .footer-copyright .links:hover {
+    border-bottom: 1px solid
+}
+
+footer .footer-bottom-wrapper .footer-bottom-text {
+    padding-top: 32px;
+    max-width: 816px
+}
+
+@media (max-width:767.98px) {
+    footer .footer-bottom-wrapper .footer-bottom-text {
+        padding-top: 24px
+    }
+}
+
+.top-header footer .footer-bottom-wrapper .footer-bottom-text ,
+footer .footer-bottom-wrapper .footer-bottom-text .top-header ,
+footer .footer-bottom-wrapper .footer-bottom-text p {
+    color: var(--color-grey);
+    font-size: .875rem
+}
