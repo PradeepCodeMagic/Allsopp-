@@ -77,3 +77,35 @@
     color: black;
     font-size: 18px;
 }
+
+/* loginPhotoDiv */
+.loginPhotoDiv{
+    width: 40px;
+    border-radius: 50%;
+    position: relative;
+   
+}
+.loginPhotoDiv img{
+    border-radius: 50%;
+    width: 100%;
+}
+.clickDiv{
+    position: absolute;
+    top: 130%;
+    left: 0%;
+    background-color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 10px 30px;
+    display: none;
+}
+.showclickDiv{
+    position: absolute;
+    top: 130%;
+    left: 0%;
+    background-color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 10px 30px;
+    display: block !important;
+}

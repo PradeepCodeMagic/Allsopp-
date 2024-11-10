@@ -10,12 +10,52 @@ import { HiOutlineBars3 } from "react-icons/hi2";
 import { TfiSearch } from "react-icons/tfi";
 import Image from 'next/image';
 import logo from '../../../public/images/AandA_Logo.svg';
+import { app } from "../FireConfig"
+
+import { getAuth, GoogleAuthProvider, signInWithPopup } from "firebase/auth";
+
+
+
 
 export default function Header() {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+
+  const [loginPhoto, setLoginphoto] = useState(null)
+  const [logoutBtn, setlogoutBtn] = useState(false);
+
+
+  let signGoogle = () => {
+    const provider = new GoogleAuthProvider();
+    const auth = getAuth(app);
+
+    signInWithPopup(auth, provider)
+      .then((result) => {
+        // This gives you a Google Access Token. You can use it to access the Google API.
+        const credential = GoogleAuthProvider.credentialFromResult(result);
+        const token = credential.accessToken;
+        // The signed-in user info.
+        const user = result.user;
+
+        console.log(user.reloadUserInfo.photoUrl)
+        setLoginphoto(user.reloadUserInfo.photoUrl)
+        // IdP data available using getAdditionalUserInfo(result)
+        // ...
+      }).catch((error) => {
+        // Handle Errors here.
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        // The email of the user's account used.
+        const email = error.customData.email;
+        // The AuthCredential type that was used.
+        const credential = GoogleAuthProvider.credentialFromError(error);
+        // ...
+      });
+  }
+
+
   return (
     <>
       <header>
@@ -51,8 +91,18 @@ export default function Header() {
                 <Nav.Link className='HeadfontIcon fs-3 ' href="/dubai/properties/residential/sales" aria-label="Search Icon">
                   <TfiSearch />
                 </Nav.Link>
-                <Nav.Link className='HeadfontIcon fs-3' role="button" aria-label="User Login">
-                  <BiUser />
+                <Nav.Link className='HeadfontIcon fs-3 ' role="button" aria-label="User Login" >
+
+                  {loginPhoto == null ?
+                    <BiUser onClick={signGoogle} />
+                    :
+                    <div className='loginPhotoDiv' onClick={()=>setlogoutBtn(!logoutBtn)}>
+                      <img src={loginPhoto} />
+
+                        <div className={logoutBtn? "showclickDiv" : "clickDiv"}> Logout </div>
+                    </div>
+                  }
+
                 </Nav.Link>
                 <Button className='HeadfontIcon fs-3' variant="link" onClick={handleShow} aria-label="Burger menu Icon">
                   <HiOutlineBars3 />
