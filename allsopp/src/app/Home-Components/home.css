@@ -217,28 +217,7 @@
 }
 
 
-/*  */
-/* #ThreeBox .img{
-    width: 100%;
-    height: 220px;
-    overflow: hidden;
-    border: 1px solid red;
-}
-#ThreeBox .img img{
-    width: 100% !important;
-    height: 100% !important;
-    transform: scale(1);
-    transition: 0.3s;
-    object-fit: cover;
-}
-#ThreeBox .img:hover img{
-    transform: scale(1.03);
-    
-}
-#ThreeBox p{
-    height: 110px;
-    border: 2px solid red;
-} */
+
 .project-slider-wrapper {
   padding: 2rem 0;
 }

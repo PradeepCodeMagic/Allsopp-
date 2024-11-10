@@ -1,8 +1,9 @@
 footer ul{
     list-style: none !important;
+    
 }
 footer {
-    background-color: black;
+    background-color: black !important;
     padding: 96px 0 92px;
     
 }
@@ -148,13 +149,37 @@ footer .footer-menu-accordion {
     }
 }
 
-footer .footer-menu-accordion.accordion .accordion-item {
-    background-color: transparent;
+footer .accordion .accordion-item {
+    background-color: rgb(0, 0, 0) !important;
+    color: white;
     border: 0;
-    border-bottom: 1px solid var(--color-grey);
-    border-radius: 0;
-    border-top: 1px solid var(--color-grey);
+    border-bottom: 1.2px solid rgb(255, 250, 250) !important ;
+    
     padding: 8px 0
+}
+.accordion-button:focus {
+    z-index: 3;
+    outline: 0;
+    /* box-shadow: var(--bs-accordion-btn-focus-box-shadow); */
+}
+.accordion-button:not(.collapsed):after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='21' viewBox='0 0 20 21' fill='none'%3E%3Cpath d='M10 4.40149V16.0682M4.16667 10.2348H15.8333' stroke='white' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    /* transform: var(--bs-accordion-btn-icon-transform); */
+}
+.accordion-button:after {
+    flex-shrink: 0;
+    width: var(--bs-accordion-btn-icon-width);
+    height: var(--bs-accordion-btn-icon-width);
+    margin-left: auto;
+    content: "";
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='21' viewBox='0 0 20 21' fill='none'%3E%3Cpath d='M10 4.40149V16.0682M4.16667 10.2348H15.8333' stroke='white' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    
+    background-size: var(--bs-accordion-btn-icon-width);
+    transition: var(--bs-accordion-btn-icon-transition);
+}
+footer .accordion .accordion-item h2 button{
+    background-color:  rgb(0, 0, 0) !important;
+    color: white;
 }
 
 footer .footer-menu-accordion.accordion .accordion-item:first-child {
@@ -229,11 +254,11 @@ footer .footer-bottom-wrapper .footer-bottom-top .social-icons>*+* {
     margin-left: 20px
 }
 
-footer .footer-bottom-wrapper .footer-bottom-top .social-icons .icon {
+footer .footer-bottom-wrapper .footer-bottom-top .social-icons {
     transition: all .4s ease
 }
 
-footer .footer-bottom-wrapper .footer-bottom-top .social-icons .icon:hover {
+footer .footer-bottom-wrapper .footer-bottom-top .social-icons:hover {
     transform: translateY(-5px)
 }
 
@@ -271,4 +296,8 @@ footer .footer-bottom-wrapper .footer-bottom-text .top-header ,
 footer .footer-bottom-wrapper .footer-bottom-text p {
     color: var(--color-grey);
     font-size: .875rem
+}
+
+.accordion-item h2{
+    background-color: black !important;
 }
